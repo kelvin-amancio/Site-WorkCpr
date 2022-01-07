@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Página inicial</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<!-- refresh  -->
+	<meta http-equiv="refresh" content="300">
+	<!-- <meta http-equiv="refresh" content="3"> -->
+	<script src="js/app.js"></script>
+
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+	  
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Ganhos', 'Prejuízos'],
+          ['2014',  1000,      100],
+          ['2016',  970,      260],
+          ['2018',  1260,       500],
+          ['2021',  1630,      340]
+        ]);
+
+        var options = {
+          title: 'Performace',
+          hAxis: {title: '',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+	  
+    </script>
+
+
+
+</head>
+	<body>
+
+ <!-- Container DARKMODE -->
+
+	</div>
+
+	<!-- NavBar-->
+
+
+	
+	<input type="checkbox" id="check">
+    <!--header começo-->
+    <header>
+       
+		
+		<label for="check">
+            <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
+        </label>
+        <div class="left">
+            <h3>Work<span id="cor">CPR</span></h3>
+        </div>
+
+		
+
+    </header>
+
+	<!--header final-->
+    <!--sidebar começo-->
+    <div class="sidebar">
+        <center>
+            <img src="imagens/imagem9.png" class="image" alt="">
+            <h2>Usuário</h2>
+        </center>
+        <a href="index.html"><ion-icon name="person"></ion-icon><span>Página inicial</span></a>
+		<a href="painel.html"><ion-icon name="desktop-outline"></ion-icon><span>Painel</span></a>
+        <a href="galeria.html"><ion-icon name="camera-outline"></ion-icon><span>Galeria</span></a>
+        <a href="#"><ion-icon name="information-circle-outline"></ion-icon><span>Sobre</span></a>
+		<a href="configuracao.html"><ion-icon name="settings-outline"></ion-icon><span>Configuração</span></a>
+		<a href="contato.html"><ion-icon name="call"></ion-icon><span>Contato</span></a>
+		<a href="calendario.html"><ion-icon name="calendar"></ion-icon><span>Calendário</span></a>
+    </div>
+    <!--sidebar final-->
+	
+	<div class="botao">
+		<a href="index.html"> <button> <h3>9.6k</h3><h4> Chamados </h4></button> </a>
+		<a href="index.html"> <button> <h3>0</h3><h4> Problemas </h4></button> </a>
+		<a href="index.html"> <button> <h3>1k</h3><h4> Usuários </h4></button> </a>
+		<a href="index.html"> <button> <h3>85%</h3><h4> Ganhos </h4></button> </a>
+		<a href="index.html"> <button> <h3>25%</h3><h4> Taxas </h4></button> </a>
+	</div>
+
+
+
+
+	<div id="container1">
+
+
+			<!-- abertura postagem -->
+			<div id="area-postagens">
+
+				<div class="postagem">
+
+
+					<div id="chart_div" style="width: 100%; height: 500px;"></div>
+				
+	
+			</div>
+			</div><!--// fechamento postagem -->
+
+			<!-- abertura postagem -->
+			
+			</div><!--// fechamento postagem -->
+
+		</div>
+		
+	</div>
+		
+	<!--// fechamento postagem -->
+	
+				<!-- abertura postagem -->
+			</div>
+				</div>
+
+			</div>
+
+			
+
+	<div class="content"> </div> 
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<!-- Parte FINAL-->
+
+	<div id="area-principal">
+
+	</div>
+
+
+	
+			
+
+		</div>
+
+	</div>
+		 
+	
+
+</div>
+	
+				
+												
+		<div id="rodape">
+			<div class="texto"> 
+				Copyright © 2021 Kelvin. All rights reserved
+			</div>
+		</div>
+
+
+	</div>
+
+
+	
+</section>
+	
+</body>
+
+
+</html>
